@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
 import { useWallet } from "@aptos-labs/wallet-adapter-react";
 import { Spin } from "antd";
 import { useCallback, useEffect, useState } from "react";
@@ -6,6 +7,7 @@ import { Task } from "../utils/types";
 import ListView from "../views/ListView";
 import NoListView from "../views/NoListView";
 import { ABI } from "../abi";
+import ImageUploader from "./ImageUploader";
 
 export default function Content() {
   const [tasks, setTasks] = useState<Task[]>([]);
@@ -39,6 +41,8 @@ export default function Content() {
   }, [account?.address, fetchList]);
 
   return (
+    <>
+    <ImageUploader name={"hi"}/>
     <Spin spinning={transactionInProgress}>
       {!accountHasList ? (
         <NoListView
@@ -53,5 +57,6 @@ export default function Content() {
         />
       )}
     </Spin>
+    </>
   );
 }
