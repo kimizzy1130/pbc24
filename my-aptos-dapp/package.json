@@ -12,5 +12,14 @@
   },
   "devDependencies": {
     "@aptos-labs/aptos-cli": "latest"
+  },
+  "dependencies": {
+    "@mui/material": "^5.15.10",
+    "@types/material-ui": "^0.21.16",
+    "@types/react-grid-layout": "^1.3.5",
+    "@types/react-router-dom": "^5.3.3",
+    "@types/styled-components": "^5.1.34",
+    "react-grid-layout": "^1.4.4",
+    "styled-components": "^6.1.8"
   }
 }
