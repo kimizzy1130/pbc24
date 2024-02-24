@@ -10,7 +10,7 @@ Izzy Kim/Graffito
 Graffito
 
 3. Link to Tweet
-n/a
+   https://testnet.nearblocks.io/txns/Ekthf3vxgQ7e7LfCnzzqEByPuNbjEeC7cTSe6XbCYpXm#
 
 4. Brief description of your project
 Graffito is a safe and secure IP marketplace between artists and GenAI companies. We empower digital artists to receive fair compensation for their original work. Simultaneously, we elevate new standards of transparency and ethics in GenAI image training datasets. We serve both artists and GenAI companies. Artists are currently losing jobs as their work is being scraped online and used without consent to train GenAI models. Existing solutions in the market that serve to protect artists — watermarking, opt-out lists, IP lawyers — are failing to actually protect artists. On the other hand, GenAI companies are being sued for $1B lawsuits by artists (Andersen v. Stability AI), in which even if they win the cases, they spend a tremendous amount of money on legal fees and compromise their PR image. Clearly, both artists and GenAI companies are in need of a solution that allows them to mutually benefit and co-exist. Our decentralized, safe, and secure IP marketplace protects artists original artwork through Glazing. Glazing makes changes to the image pixel that are hardly detectable to the human eye, but very visible to GenAI models. This prevents web scrapers from scraping image listed for sale pre-purchase and using it to train their GenAI models. We use Aptos to facilitate smart contract between buyers (artists) and sellers (GenAI companies) which allows artists to receive compensation once an art has been purchased by GenAI companies for training purposes. GenAI companies receive raw, un-glazed image once a payment has been confirmed.
