@@ -5,7 +5,6 @@ import { useCallback, useEffect, useState } from "react";
 import { aptos } from "../utils/consts";
 import { Task } from "../utils/types";
 import ListView from "../views/ListView";
-import NoListView from "../views/NoListView";
 import CardView from "../views/CardView";
 import { ABI } from "../abi";
 import ImageUploader from "./ImageUploader";
@@ -48,18 +47,11 @@ export default function Content() {
     </div>
     <Spin spinning={transactionInProgress}>
       <CardView />
-      {!accountHasList ? (
-        <NoListView
-          setTransactionInProgress={setTransactionInProgress}
-          setAccountHasList={setAccountHasList}
-        />
-      ) : (
         <ListView
           setTransactionInProgress={setTransactionInProgress}
           tasks={tasks}
           setTasks={setTasks}
         />
-      )}
     </Spin>
     </>
   );
