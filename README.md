@@ -31,10 +31,12 @@ Aptos
 https://drive.google.com/file/d/1rnooEWSkfynHVhtPGUgej5Mq4PhhWEW0/view?usp=sharing
 
 10. Deployed Smart Contract Address
+    https://explorer.aptoslabs.com/txn/0x9c39733cb9afdeff334cc44e45592d8e6deed2674129c8e80cecfc3ce43b9022?network=devnet
 
-11. Deployed to Any other Chain Yes/No
+12. Deployed to Any other Chain Yes/No
+    Yes
 
-12. Is this part of a larger / past project? If yes, please include repo for larger project. Note: this can only help you. We are simply curious to see integration plans for your hackathon project.
+14. Is this part of a larger / past project? If yes, please include repo for larger project. Note: this can only help you. We are simply curious to see integration plans for your hackathon project.
 Yes. Don't have a repo, but Maddie and Izzy working on business development side of this for my Entrepreneurship class as well.
 
 ## Premise: 
