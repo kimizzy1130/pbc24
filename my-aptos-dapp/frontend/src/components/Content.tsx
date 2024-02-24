@@ -43,9 +43,6 @@ export default function Content() {
 
   return (
     <>
-    <div style={{marginBottom: "20px"}}>
-    <ImageUploader name={"hi"}/>
-    </div>
     <Spin spinning={transactionInProgress}>
       <CardView />
       {!accountHasList ? (
