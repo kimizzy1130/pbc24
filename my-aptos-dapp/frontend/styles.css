@@ -1,3 +1,4 @@
 body {
     background-color: #1A1A1A;
-  }
+    min-height: fit-content;
+  } 
