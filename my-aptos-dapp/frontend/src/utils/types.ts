@@ -3,3 +3,8 @@ export type Task = {
   completed: boolean;
   content: string;
 };
+export type Buy = {
+  address: string;
+  completed: boolean;
+  artist_addr: string;
+};

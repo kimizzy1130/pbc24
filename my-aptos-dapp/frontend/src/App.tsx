@@ -17,6 +17,8 @@ import Header from "./components/Header";
 import Content from "./components/Content";
 import { useAlert } from "./hooks/alertProvider";
 
+
+
 const wallets = [
   new PetraWallet(),
   new PontemWallet(),

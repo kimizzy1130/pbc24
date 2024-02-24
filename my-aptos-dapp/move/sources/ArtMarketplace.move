@@ -3,6 +3,7 @@ module marketplace::ArtMarketplace {
     use std::coin::{deposit, withdraw};
     use std::signer;
     use aptos_framework::aptos_coin::AptosCoin;
+    use std::string::{String,utf8};
 
     // Represents a single art piece listing
     struct ArtListing has key, store, drop {
@@ -20,7 +21,17 @@ module marketplace::ArtMarketplace {
     // Marketplace commission rate (e.g., 5%)
     const COMMISSION_RATE: u64 = 5;
 
-    public fun list_art(
+
+    fun init_module(resource_account: &signer) {
+	    // creates the first arbitrary listing by the Contract creator
+        let original_image_hash:vector<u8> = b"123"; 
+        let glazed_image_hash:vector<u8> = b"321";
+        let price:u64 = 0;
+	    list_art(resource_account, original_image_hash, glazed_image_hash, price); // TODO: just to test
+	}
+
+
+    public entry fun list_art(
         artist: &signer,
         original_image_hash: vector<u8>,
         glazed_image_hash: vector<u8>,
@@ -36,7 +47,7 @@ module marketplace::ArtMarketplace {
         move_to(artist, listing);
     }
 
-    public fun buy_art(buyer: &signer, artist_addr: address) acquires ArtListing, MarketplaceBalance {
+    public entry fun buy_art(buyer: &signer, artist_addr: address) acquires ArtListing, MarketplaceBalance {
         let listing = borrow_global_mut<ArtListing>(artist_addr);
         let price = listing.price;
         
@@ -66,7 +77,7 @@ module marketplace::ArtMarketplace {
         //move_from<ArtListing>(artist_addr);
     }
 
-    public fun withdraw_commission(owner: &signer) acquires MarketplaceBalance {
+    public entry fun withdraw_commission(owner: &signer) acquires MarketplaceBalance {
         let owner_addr = signer::address_of(owner);
         assert!(owner_addr == @marketplace, 403); // Only the owner/creator can withdraw
         
