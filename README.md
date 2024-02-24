@@ -1,8 +1,45 @@
 # Graffito, Penn Blockchain Hackathon 2024
 
+## Submission Details
+1. Participant/Team Name
+Sean Cho/Graffito
+Madelyn Dempsey/Graffito
+Izzy Kim/Graffito
+
+3. Project Name
+Graffito
+
+3. Link to Tweet
+n/a
+
+4. Brief description of your project
+Graffito is a safe and secure IP marketplace between artists and GenAI companies. We empower digital artists to receive fair compensation for their original work. Simultaneously, we elevate new standards of transparency and ethics in GenAI image training datasets. We serve both artists and GenAI companies. Artists are currently losing jobs as their work is being scraped online and used without consent to train GenAI models. Existing solutions in the market that serve to protect artists — watermarking, opt-out lists, IP lawyers — are failing to actually protect artists. On the other hand, GenAI companies are being sued for $1B lawsuits by artists (Andersen v. Stability AI), in which even if they win the cases, they spend a tremendous amount of money on legal fees and compromise their PR image. Clearly, both artists and GenAI companies are in need of a solution that allows them to mutually benefit and co-exist. Our decentralized, safe, and secure IP marketplace protects artists original artwork through Glazing. Glazing makes changes to the image pixel that are hardly detectable to the human eye, but very visible to GenAI models. This prevents web scrapers from scraping image listed for sale pre-purchase and using it to train their GenAI models. We use Aptos to facilitate smart contract between buyers (artists) and sellers (GenAI companies) which allows artists to receive compensation once an art has been purchased by GenAI companies for training purposes. GenAI companies receive raw, un-glazed image once a payment has been confirmed.
+
+5. Country / Region
+USA
+
+6. Technical Solution your dApp is based on?
+Aptos create dApp
+
+7. Which theme best describes your dApp?
+Social Impact
+
+8. What sponsor bounty you're applying to? (Note: Can me multiple)
+Aptos
+
+9. Link to pitch deck (MUST INCLUDE LIVE DEMO LINK)
+https://drive.google.com/file/d/1rnooEWSkfynHVhtPGUgej5Mq4PhhWEW0/view?usp=sharing
+
+10. Deployed Smart Contract Address
+
+11. Deployed to Any other Chain Yes/No
+
+12. Is this part of a larger / past project? If yes, please include repo for larger project. Note: this can only help you. We are simply curious to see integration plans for your hackathon project.
+Yes. Don't have a repo, but Maddie and Izzy working on business development side of this for my Entrepreneurship class as well.
+
 ## Premise: 
 
-[https://drive.google.com/file/d/1l2R4KJnRkC6U5gkp43rF1D5p67cuu66v/view](https://drive.google.com/file/d/1wOL8-yf5Cz1NrO3ywPT3r9bC7Xydix7o/view?usp=sharing)
+https://drive.google.com/file/d/1rnooEWSkfynHVhtPGUgej5Mq4PhhWEW0/view?usp=sharing
 
 Graffito is a safe and secure IP marketplace between artists and GenAI companies. We empower digital artists to receive fair compensation for their original work. Simultaneously, we elevate new standards of transparency and ethics in GenAI image training datasets. We serve both artists and GenAI companies. Artists are currently losing jobs as their work is being scraped online and used without consent to train GenAI models. Existing solutions in the market that serve to protect artists — watermarking, opt-out lists, IP lawyers — are failing to actually protect artists. On the other hand, GenAI companies are being sued for $1B lawsuits by artists (Andersen v. Stability AI), in which even if they win the cases, they spend a tremendous amount of money on legal fees and compromise their PR image. Clearly, both artists and GenAI companies are in need of a solution that allows them to mutually benefit and co-exist. Our decentralized, safe, and secure IP marketplace protects artists original artwork through Glazing. Glazing makes changes to the image pixel that are hardly detectable to the human eye, but very visible to GenAI models. This prevents web scrapers from scraping image listed for sale pre-purchase and using it to train their GenAI models. We use Aptos to facilitate smart contract between buyers (artists) and sellers (GenAI companies) which allows artists to receive compensation once an art has been purchased by GenAI companies for training purposes. GenAI companies receive raw, un-glazed image once a payment has been confirmed.
 
