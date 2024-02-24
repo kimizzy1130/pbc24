@@ -7,3 +7,4 @@ rev = 'main'
 subdir = 'aptos-move/framework/aptos-framework'
 [addresses]
 todolist_addr='_'
+marketplace='_'
