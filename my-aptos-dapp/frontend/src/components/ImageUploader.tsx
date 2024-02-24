@@ -44,13 +44,13 @@ export default function TaskInput({
             >
             Upload Image
             </Button>
-    </Col>
             {selectedImage && (
-            <Col>
+            <Flex style={{flexDirection: "column"}}>
                 <Flex>Selected Image: {name}</Flex>
                 <Image src={URL.createObjectURL(selectedImage)} alt="Selected" style={{maxWidth: "300px"}}/>
-            </Col>
+            </Flex>
             )}
+    </Col>
     </Row>
   );
 }
