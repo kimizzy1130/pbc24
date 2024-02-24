@@ -51,7 +51,7 @@ export default function TaskInput({
       await provider.waitForTransaction(response.hash);
       setSuccessAlertHash(response.hash, network?.name);
       // Create a new array based on current state:
-      let newTasks = [...tasks];
+      const newTasks = [...tasks];
 
       // Add item to the tasks array
       newTasks.push(newTaskToPush);
@@ -59,7 +59,7 @@ export default function TaskInput({
       setTasks(newTasks);
       // clear input text
       setNewTask("");
-    } catch (error: any) {
+    } catch (error: unknown) {
       console.log("error", error);
     } finally {
       setTransactionInProgress(false);
