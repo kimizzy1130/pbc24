@@ -1,13 +1,14 @@
 import { WalletSelector } from "@aptos-labs/wallet-adapter-ant-design";
 import "@aptos-labs/wallet-adapter-ant-design/dist/index.css";
-import { Layout, Row, Col } from "antd";
+import { Layout, Row, Col, Image } from "antd";
+import logo from "../assets/logo.jpeg";
 
 export default function Header() {
   return (
-    <Layout>
+    <Layout style={{backgroundColor: "#1A1A1A"}}>
       <Row align="middle">
-        <Col span={10} offset={2}>
-          <h1>Graffito</h1>
+        <Col>
+        <Image src={logo} alt="logo" style={{maxWidth: "200px"}}/>
         </Col>
         <Col span={12} style={{ textAlign: "right", paddingRight: "200px" }}>
           <WalletSelector />
