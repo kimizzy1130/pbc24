@@ -37,23 +37,4 @@ export default function NoListView({
       setTransactionInProgress(false);
     }
   };
-
-  return (
-    <Row gutter={[0, 32]} style={{ marginTop: "2rem" }}>
-      <Col span={8} offset={8}>
-        <Button
-          disabled={!account}
-          block
-          onClick={addNewList}
-          type="primary"
-          style={{ height: "40px", backgroundColor: "#3f67ff" }}
-        >
-          Add new list
-        </Button>
-      </Col>
-      <Col span={8} offset={10}>
-        {!account && <h3>Connect a wallet to create a new list</h3>}
-      </Col>
-    </Row>
-  );
 }

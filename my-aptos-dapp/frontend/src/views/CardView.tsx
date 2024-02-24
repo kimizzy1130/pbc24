@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import styled from 'styled-components';
 
 import img1 from "../../images/img1.jpg";
@@ -75,14 +75,6 @@ const CardContainer = styled.div`
   flex-wrap: wrap;
 `;
 
-const CardWrapper = styled.div`
-  width: 200px;
-  border: 1px solid #ccc;
-  border-radius: 8px;
-  margin: 10px;
-  padding: 10px;
-`;
-
 const CardImage = styled.img`
   width: 100%;
   height: auto;
@@ -94,19 +86,54 @@ const CardTitle = styled.h3`
 `;
 
 const CardDescription = styled.p`
-  color: #666;
+  color: #FFFFFF;
+`;
+
+const BuyButton = styled.button`
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 4px;
+  cursor: pointer;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+`;
+
+const CardWrapper = styled.div`
+  width: 200px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  margin: 10px;
+  padding: 10px;
+  position: relative; /* Ensure the button is positioned relative to the card wrapper */
+  &:hover ${BuyButton} {
+    opacity: 1;
+  }
 `;
 
 // Card component
 const Card: React.FC<{ card: CardData }> = ({ card }) => {
-  return (
-    <CardWrapper>
-      <CardImage src={card.imageUrl} alt={card.title} />
-      <CardTitle>{card.title}</CardTitle>
-      <CardDescription>{card.description}</CardDescription>
-    </CardWrapper>
-  );
-};
+    const [isHovered, setIsHovered] = useState(false);
+  
+    return (
+      <CardWrapper
+        onMouseEnter={() => setIsHovered(true)}
+        onMouseLeave={() => setIsHovered(false)}
+      >
+        {isHovered && (
+          <BuyButton>Buy Now</BuyButton>
+        )}
+        <CardImage src={card.imageUrl} alt={card.title} />
+        <CardTitle>{card.title}</CardTitle>
+        <CardDescription>{card.description}</CardDescription>
+      </CardWrapper>
+    );
+  };
 
 // CardList component to render multiple cards
 const CardList: React.FC<{ cards: CardData[] }> = ({ cards }) => {
